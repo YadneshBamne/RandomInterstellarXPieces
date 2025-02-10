@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lnterstellar Fun Facts</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #222;
+      color: white;
+    }
+
+    #fact-display {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      min-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interstellar Fun Facts</h1>
+  <div id="fact-display">Click the button for a fun fact!</div>
+  <button onclick="generateFact()">Generate Fact</button>
+
+  <script>
+    const facts = [
+      { "fact": "Scientific Grounding: Physicist Kip Thorne ensured the film's portrayal of wormholes, black holes, and time dilation aligned with scientific theory." },
+      { "fact": "Gargantua's Accuracy: The black hole, Gargantua, is considered one of cinema's most accurate depictions, thanks to Thorne's calculations and collaboration with the visual effects team." },
+      { "fact": "Time Dilation on Display: The water planet near Gargantua showcases extreme time dilation, with one hour equaling seven years relative to Earth." },
+      { "fact": "Love Transcends: *Interstellar* explores the idea of love as a force potentially transcending time and space." },
+      { "fact": "The \"They\" Mystery:  The film leaves the identity and nature of the beings assisting humanity open to interpretation." },
+      { "fact": "Hans Zimmer's Score:  The powerful and emotional score, composed by Hans Zimmer, significantly contributes to the film's atmosphere." },
+      { "fact": "Matthew McConaughey's Emotional Range: McConaughey delivers a moving performance as Cooper, capturing the character's love for his family and dedication to humanity's survival." },
+      { "fact": "Visual Spectacle: *Interstellar* is renowned for its stunning visual effects, particularly the depiction of space travel, wormholes, and celestial objects." },
+      { "fact": "Themes of Exploration and Survival: The film grapples with themes of human resilience, the importance of scientific exploration, and the drive to find a new home for humanity." },
+      { "fact": "Global Acclaim: *Interstellar* received critical acclaim upon release, praised for its ambition, emotional depth, and scientific accuracy. It grossed over  $773 million worldwide." }
+    ];
+
+    function generateFact() {
+      const randomIndex = Math.floor(Math.random() * facts.length);
+      const randomFact = facts[randomIndex].fact; 
+
+      document.getElementById("fact-display").innerText = randomFact;
+    }
+  </script>
+</body>
+</html>
