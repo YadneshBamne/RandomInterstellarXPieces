@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>lnterstellar Fun Facts</title>
+  <title>Interstellar Fun Facts</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Roboto', sans-serif; 
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
       margin: 0;
-      background-color: #222;
-      color: white;
+      background-color: #121212; /* Dark background */
+      color: #f0f0f0; /* Light text color */
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      /* Blue glow effect */
     }
 
     #fact-display {
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-bottom: 20px;
+      padding: 30px;
+      border: 1px solid #333; /* Darker border */
+      border-radius: 10px;
+      margin-bottom: 30px;
       text-align: center;
-      min-width: 300px;
+      min-width: 400px;
+      background-color: #222; /* Darker background */
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    button {
+      background-color: #007bff; /* Blue button */
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: all 0.2s ease; /* Smooth transition */
+    }
+
+    button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.8); /* Blue glow on hover */
     }
   </style>
 </head>
